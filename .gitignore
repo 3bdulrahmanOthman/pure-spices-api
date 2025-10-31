@@ -1,5 +1,4 @@
-/bootstrap/cache/
-/bootstrap/*.php
+
 /node_modules
 /public/upload
 /public/hot
