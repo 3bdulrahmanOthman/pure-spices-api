@@ -155,8 +155,8 @@ class SettingSeeder extends Seeder
                 ],
                 'stripe' => [
                     'title' => 'Stripe',
-                    'key' => 'pk_test_51MmTx1SHGHXeqsVlOWH2cwf42zty7jStl9ngvASN79Vri7bwGsbOSTGFTf17O2r5PiCIinh6vmO5FGrU5B2ymW7L00OcvpXwT3',
-                    'secret' => 'sk_test_51MmTx1SHGHXeqsVlAbforUpNIqByURbQy2xKZLlDrSNUvtvbgjywaaEZfGsbcQxIh0ggazGXrfnZBy0rQSLCqvzo00PyWPfbne',
+                    'key' => 'pk_test_sample_key',
+                    'secret' => 'sk_test_sample_secret',
                     'status' => true,
                 ],
                 'razorpay' => [
