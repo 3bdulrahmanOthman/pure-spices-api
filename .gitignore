@@ -1,37 +1,62 @@
-
+# ──────────────────────────────────────────────────────────────
+# 1. Laravel core generated files
+# ──────────────────────────────────────────────────────────────
+/vendor
 /node_modules
-/public/upload
 /public/hot
-/public/storage
+/public/storage          # <-- symlink, created by `php artisan storage:link`
 /public/build
 /storage/*.key
-/vendor
-.env.backup
+/bootstrap/cache/*.php
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*.php
+/storage/logs/*.log
+
+# ──────────────────────────────────────────────────────────────
+# 2. Environment & secrets
+# ──────────────────────────────────────────────────────────────
+.env
+.env.*                  # .env.local, .env.testing, etc.
+!.env.example           # <-- keep example for new devs
 .phpunit.result.cache
-Homestead.json
-Homestead.yaml
 auth.json
 npm-debug.log
 yarn-error.log
-/.idea
-/.vscode
-/.history
-/storage/dotenv-editor
-/stubs
+
+# ──────────────────────────────────────────────────────────────
+# 3. IDE / editor junk
+# ──────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+.history/
+*.sublime-*
+*.swp
+
+# ──────────────────────────────────────────────────────────────
+# 4. OS / temp files
+# ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+
+# ──────────────────────────────────────────────────────────────
+# 5. Fastkart / custom installer files
+# ──────────────────────────────────────────────────────────────
 installation.json
 fzip.li.dic
 _log.dic.xml
 .migration
-.env
-.env.example
+/stubs
+/storage/dotenv-editor
 
+# ──────────────────────────────────────────────────────────────
+# 6. Uploaded user content (KEEP OUT OF GIT!)
+# ──────────────────────────────────────────────────────────────
+/storage/app/public/*   # <-- user uploads, dummy images, etc.
+!/storage/app/public/.gitkeep   # <-- keep folder structure
 
-
-/storage
-/storage
-/storage
-/storage
-/storage
-/storage/app/public
-storage/app/public/109/Curd_3.png
-/storage/app
+# ──────────────────────────────────────────────────────────────
+# 7. Optional: keep empty directories in repo
+# ──────────────────────────────────────────────────────────────
+# (create these empty files manually if you want the dirs to exist)
